@@ -1,0 +1,12 @@
+.carousel_main {
+  width: 90vw;
+  height: 60vh;
+  /* border: 1px solid red; */
+  margin: 5vh 5vw;
+}
+.carousel_main img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}

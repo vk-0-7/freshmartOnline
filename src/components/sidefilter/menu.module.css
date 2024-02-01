@@ -1,0 +1,27 @@
+.menu_body ul {
+  font-size: 1.2rem;
+  padding: 15px 10px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.menu_body > ul svg {
+  height: 0.65em !important;
+  width: 0.65em !important;
+  stroke: var(--primary);
+  fill: var(--primary);
+  font-size: 1.1rem;
+}
+.menu_body li {
+  font-size: 1rem;
+  padding-block: 2px;
+  list-style-type: none;
+}
+.menu_value {
+  padding: 14px 8px;
+  gap: 10px;
+  /* border: 1px solid black; */
+}
