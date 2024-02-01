@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import styles from "./sidefilter.module.css";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { RxCross2 } from "react-icons/rx";
 // import api from "@/api";
 import { GrFormFilter } from "react-icons/gr";
@@ -19,7 +19,7 @@ type Props = {
 const Sidefilter = ({ selectedData, setSelectedData }: Props) => {
   const router = useRouter();
   // console.log(router);
-  const params = useSearchParams();
+  // const params = useSearchParams();
   const pathname = usePathname();
   // console.log(params.get("category"), pathname);
   const [openfilterModal, setopenfilterModal] = useState<any>(false);
