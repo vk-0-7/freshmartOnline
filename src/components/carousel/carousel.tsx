@@ -2,7 +2,10 @@
 
 import React from "react";
 import "@splidejs/react-splide/css";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import {
+  Splide,
+  SplideSlide,
+} from "../../../node_modules/@splidejs/react-splide";
 import Image from "next/image";
 import Banner from "../../Assets/Images/banner.webp";
 import Banner2 from "../../Assets/Images/banner2.jpeg";

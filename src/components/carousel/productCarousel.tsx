@@ -3,7 +3,10 @@
 import React from "react";
 import Card from "../card/card";
 import "@splidejs/react-splide/css";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import {
+  Splide,
+  SplideSlide,
+} from "../../../node_modules/@splidejs/react-splide";
 
 const ProductCarousel = (data: any) => {
   return (
