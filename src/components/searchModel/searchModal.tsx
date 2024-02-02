@@ -32,11 +32,6 @@ const SearchModal = ({ setShowSearch, val, setSearchValue }: any) => {
     });
   }, []);
 
-  const handleProductpage = (slug: any) => {
-    setShowSearch(false);
-    router.push("/" + slug);
-  };
-
   return (
     <div className={styles.Modal_full} id="modal">
       <div className={styles.search_full} id="scroll_div">
