@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import search from "../../Assets/Icons/search.svg";
+import SearchModal from "../searchModel/searchModal";
 import cart from "../../Assets/Icons/cart.svg";
 import user from "../../Assets/Icons/user.svg";
 import styles from "./navbar.module.css";
@@ -81,6 +82,13 @@ const Navbar = ({ type }: any) => {
 
   return (
     <>
+      {showSearch && (
+        <SearchModal
+          setShowSearch={setShowSearch}
+          val={searchvalue}
+          setSearchValue={setSearchValue}
+        />
+      )}
       <div className={`${styles.nav_main}`}>
         <div className={styles.logo}>
           <Link href={"/"}>
